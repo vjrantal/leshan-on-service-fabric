@@ -1,0 +1,10 @@
+{
+    "platform": "windows64",
+    "jdk": "C:/Program Files/Java/jdk1.8.0_121",
+    "executable": "leshan",
+    "classpath": [
+        "leshan/leshan-server-demo/target/leshan-server-demo-1.0.0-SNAPSHOT-jar-with-dependencies.jar"
+    ],
+    "mainclass": "org.eclipse.leshan.server.demo.LeshanServerDemo",
+    "output": "target/LeshanApp/package"
+}

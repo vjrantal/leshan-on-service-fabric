@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ServiceManifest xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="LeshanApp" Version="1.0" xmlns="http://schemas.microsoft.com/2011/01/fabric">
+   <ServiceTypes>
+      <StatelessServiceType ServiceTypeName="LeshanApp" UseImplicitHost="true">
+      </StatelessServiceType>
+   </ServiceTypes>
+   <CodePackage Name="package" Version="1.0">
+      <EntryPoint>
+         <ExeHost>
+            <Program>leshan.exe</Program>
+            <WorkingFolder>CodePackage</WorkingFolder>
+         </ExeHost>
+      </EntryPoint>
+   </CodePackage>
+   <Resources>
+      <Endpoints>
+         <Endpoint Name="LeshanCoapEndpoint" Type="Input" Port="5683" />
+         <Endpoint Name="LeshanCoapsEndpoint" Type="Input" Port="5684" />
+         <Endpoint Name="LeshanServerEndpoint" Type="Input" Port="8080" />
+      </Endpoints>
+   </Resources>
+</ServiceManifest>
